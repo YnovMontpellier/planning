@@ -1,0 +1,27 @@
+{
+  "name": "ynov-planning-ecrans",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Affichage des cours du jour HyperPlanning sur les écrans du campus Ynov (Emity) + back-office",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "hash-password": "node scripts/hash-password.js",
+    "build:php": "node scripts/build-php.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^18.0.8",
+    "express": "^4.22.3",
+    "express-rate-limit": "^8.7.1",
+    "express-session": "^1.19.0",
+    "helmet": "^8.3.0",
+    "node-ical": "^0.27.3"
+  }
+}
